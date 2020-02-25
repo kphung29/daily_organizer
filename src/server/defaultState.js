@@ -3,6 +3,10 @@ export const defaultState = {
     {
       id: "U1",
       name: "Dev Tester"
+    },
+    {
+      id: "U2",
+      name: "Front End Tester"
     }
   ],
   groups: [
@@ -10,6 +14,11 @@ export const defaultState = {
       name: "To Do",
       id: "G1",
       owner: "U1"
+    },
+    {
+      name: "To Do",
+      id: "G2",
+      owner: "U2"
     }
   ],
   tasks: [
@@ -19,6 +28,12 @@ export const defaultState = {
       group: "G1",
       owner: "U1",
       isComplete: false
+    },
+    {
+      name: "Do Feature",
+      id: "T2",
+      group: "G2",
+      owner: "U2"
     }
   ],
   comments: [
@@ -27,6 +42,12 @@ export const defaultState = {
       id: "C1",
       task: "T1",
       content: "Great Work!!"
+    },
+    {
+      owner: "U2",
+      id: "C2",
+      task: "T2",
+      content: "Needs Updating!"
     }
   ]
 };
